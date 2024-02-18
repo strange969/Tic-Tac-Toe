@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" herf ="styles.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src ="script.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <!-- this is for out 3*3 board and in our board we have 9 cell -->
-    <div class="Board" id=""Board>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+    <div class="board x" id="board">
+        <div class="cell x" data-cell></div>
+        <div class="cell circle" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
@@ -20,8 +19,8 @@
         <div class="cell" data-cell></div>
         <div class="cell" data-cell></div>
     </div>
-    <!-- for winner we will have winner class -->
-    <div class="winner-message" id ="winningMessage">
+
+    <div class="winning-message" id="winningMessage">
         <div data-winning-message-text></div>
         <button id="restartButton">Restart</button>
     </div>
